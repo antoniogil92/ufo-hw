@@ -47,7 +47,7 @@ function call(renderData) {
  var tbody = d3.select("tbody");
  // // Append one cell for the student name
 
- for (var i = 0; i < renderData.length; i++){
+ for (var i = 0; i < tableData.length; i++){
 
    var row = tbody.append("tr");
    row.append("td").text(datetime[i]);
@@ -67,7 +67,7 @@ submit.on("click", function () {
      // Prevent the page from refreshing
      d3.event.preventDefault();
      // Select the input element and get the raw HTML node
-     var inputElement = d3.select("#filter-btn");
+     var inputElement = d3.select("#datetime");
      // Get the value property of the input element
      var inputValue = inputElement.property("value");
 
